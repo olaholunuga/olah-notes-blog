@@ -13,6 +13,7 @@ export default defineConfig({
     backlinks: true,
     tags: true,
     wikiLinks: true,
+    showAllPagesOnIndex: true, 
   },
 
   theme: {
