@@ -492,7 +492,7 @@ Why Argon2?
 Why a single “access” token?
 - For a learning project, one token keeps the flow simple:
   - Issue token at login
-  - Use it for all requests (Authorization: Bearer <token>)
+  - Use it for all requests (Authorization: Bearer &lt;token&gt;)
   - Rotate manually via /auth/rotate to get a fresh token (revoking the old)
 - In larger systems, you’d often use short-lived access tokens and longer-lived refresh tokens with rotation. Here you get the rotation concept without the extra token type.
 
