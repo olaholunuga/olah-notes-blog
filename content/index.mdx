@@ -1,0 +1,23 @@
+```mdx
+---
+title: "Home"
+---
+
+import { usePages } from "flowershow";
+import Link from "next/link";
+
+# Welcome 🌸
+
+Here are my latest articles:
+
+{usePages()
+  .filter(p => !p.draft)
+  .sort((a, b) => new Date(b.date) - new Date(a.date))
+  .map(p => (
+    <div key={p.url} className="mb-4">
+      <h2><Link href={p.url}>{p.title}</Link></h2>
+      <p>{p.description}</p>
+      <small>{new Date(p.date).toLocaleDateString()}</small>
+    </div>
+  ))
+}
