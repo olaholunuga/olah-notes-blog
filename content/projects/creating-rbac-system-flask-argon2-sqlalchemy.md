@@ -38,7 +38,7 @@ Terminology (quick reference)
 
 - Login flow diagram: ![Login flow diagram](images/login-flow.png)
 - Protected request + RBAC diagram: ![Protected RBAC diagram](images/protected-rbac.png)
-- Swagger UI screenshot: ![Swagger UI](/images/swagger-ui.png)
+- Swagger UI screenshot: ![Swagger UI](./swagger-ui.png)
 
 ---
 
