@@ -1373,53 +1373,9 @@ What these tests prove
 
 ---
 
-## 10) Postman Collection (optional)
-
-If you prefer manual exploration, import the collection and set a `token` variable after login.
-
-```json
-{
-  "info": {
-    "name": "RBAC API Collection",
-    "_postman_id": "c6c6c6aa-0000-4d0a-aaaa-111111111111",
-    "description": "Minimal collection for RBAC API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "Register",
-      "request": {
-        "method": "POST",
-        "header": [{ "key": "Content-Type", "value": "application/json" }],
-        "url": { "raw": "http://localhost:5000/auth/register", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["auth", "register"] },
-        "body": { "mode": "raw", "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"password8\"\n}" }
-      }
-    },
-    {
-      "name": "Login",
-      "request": {
-        "method": "POST",
-        "header": [{ "key": "Content-Type", "value": "application/json" }],
-        "url": { "raw": "http://localhost:5000/auth/login", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["auth", "login"] },
-        "body": { "mode": "raw", "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"password8\"\n}" }
-      }
-    },
-    {
-      "name": "Me",
-      "request": {
-        "method": "GET",
-        "header": [{ "key": "Authorization", "value": "Bearer {{token}}" }],
-        "url": { "raw": "http://localhost:5000/auth/me", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["auth", "me"] }
-      }
-    }
-  ],
-  "variable": [{ "key": "token", "value": "" }]
-}
-```
-
 ---
 
-## 11) Run and Explore
+## 10) Run and Explore
 
 Quickstart
 
@@ -1452,7 +1408,7 @@ Production notes (at a glance)
 
 ---
 
-## 12) Diagrams (placeholders + Mermaid)
+## 11) Diagrams (placeholders + Mermaid)
 
 Static images (replace with your own):
 - ![Login flow diagram](images/login-flow.png)
